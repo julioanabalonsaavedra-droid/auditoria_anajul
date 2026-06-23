@@ -205,6 +205,7 @@ Mantener respaldos actualizados para facilitar la recuperación ante incidentes.
 
 ---
 
+
 # 10. Conclusión
 
 La vulnerabilidad SQL Injection representa una de las amenazas más críticas para aplicaciones web que almacenan información sensible.
