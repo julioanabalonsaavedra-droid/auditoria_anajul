@@ -212,6 +212,32 @@ export default function App() {
         </section>
 
         <CurrentComponent />
+        <footer className="github-footer">
+  <div className="github-footer-content">
+    <div>
+      <span className="github-kicker">Repositorio del proyecto</span>
+      <h3>Auditoría Web Clínica Vista Hermosa</h3>
+      <p>
+        Proyecto desarrollado en React, con informe en Markdown, evidencias de
+        ataques DVWA, cálculo CVSS, matriz de riesgo y bitácora de uso de IA.
+      </p>
+    </div>
+
+    <a
+      className="github-button"
+      href="https://github.com/julioanabalonsaavedra-droid"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Ir al GitHub de Julio Anabalón"
+    >
+      <span className="github-icon">⌬</span>
+      <div>
+        <strong>Ver GitHub</strong>
+        <small>julioanabalonsaavedra-droid</small>
+      </div>
+    </a>
+  </div>
+</footer>
       </section>
     </main>
   );
