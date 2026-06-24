@@ -65,6 +65,12 @@ El ejercicio se desarrolló únicamente dentro de un ambiente autorizado y delib
 
 **Figura 3.** Evidencia de explotación Command Injection en DVWA. Se observa la ejecución de comandos del sistema operativo desde la aplicación vulnerable, demostrando que la entrada del usuario fue interpretada como una instrucción del servidor.
 
+## Captura de cálculo CVSS
+
+![CVSS Command Injection](/img_anajul/cvss_comandos_anajul.png)
+
+**Figura 2.** Cálculo CVSS 3.1 para Command Injection. El resultado obtenido es **10.0 / Crítico**, debido a que permite ejecutar comandos sobre el sistema operativo desde la red, sin privilegios ni interacción del usuario, afectando gravemente la confidencialidad, integridad y disponibilidad del servidor.
+
 ## 5.3 Resultado obtenido
 
 Al ingresar el payload en el campo vulnerable, la aplicación ejecutó el comando enviado y mostró información proveniente del sistema operativo.

@@ -64,6 +64,12 @@ El análisis se desarrolló con fines defensivos y académicos, orientado a comp
 
 **Figura 1.** Evidencia de explotación SQL Injection en DVWA. Se observa el payload utilizado y la exposición de múltiples registros, demostrando que la consulta SQL fue manipulada exitosamente.
 
+## Captura de cálculo CVSS
+
+![CVSS SQL Injection](/img_anajul/cvss_sqli_anajul.png)
+
+**Figura 1.** Cálculo CVSS 3.1 para SQL Injection. El resultado obtenido es **9.8 / Crítico**, debido a que la vulnerabilidad puede explotarse desde la red, con baja complejidad, sin privilegios, sin interacción del usuario y con impacto alto sobre la confidencialidad, integridad y disponibilidad de la base de datos clínica.
+
 ## 5.3 Resultado obtenido
 
 Al ingresar el payload en el campo vulnerable, la aplicación retornó múltiples registros almacenados en la base de datos.

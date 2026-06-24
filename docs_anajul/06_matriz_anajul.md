@@ -332,16 +332,15 @@ El puntaje CVSS asignado para Command Injection es **10.0**, correspondiente a s
 
 # 10. Comparación entre Matriz de Riesgo y CVSS
 
-| Vulnerabilidad    | CVSS | Severidad CVSS | Riesgo matriz | Observación                                        |
-| ----------------- | ---: | -------------- | ------------- | -------------------------------------------------- |
-| Command Injection | 10.0 | Crítica        | Crítico       | Mayor prioridad por compromiso del servidor        |
-| SQL Injection     |  9.8 | Crítica        | Crítico       | Alto impacto sobre base de datos clínica           |
-| XSS Reflected     |  6.1 | Media          | Alto          | El contexto de salud aumenta su impacto de negocio |
+| ID | Vulnerabilidad | Vector CVSS 3.1 | Puntaje | Severidad | Probabilidad | Impacto | Riesgo |
+|---|---|---|---:|---|---:|---:|---:|
+| R-01 | SQL Injection | `CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H` | 9.8 | Crítica | 5 | 5 | 25 |
+| R-02 | XSS Reflected | `CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N` | 6.1 | Media | 4 | 4 | 16 |
+| R-03 | Command Injection | `CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H` | 10.0 | Crítica | 5 | 5 | 25 |
 
-La comparación muestra que CVSS entrega una visión técnica de severidad, mientras que la matriz de riesgo incorpora además el contexto de negocio.
+La clasificación CVSS permite medir la severidad técnica de cada vulnerabilidad en una escala de 0 a 10. Sin embargo, la matriz de riesgo incorpora además el contexto de negocio de Clínica Vista Hermosa, considerando el impacto sobre fichas clínicas, diagnósticos, resultados de exámenes, credenciales, servidores y continuidad operacional.
 
-Por esta razón, XSS Reflected puede tener severidad técnica media, pero riesgo alto para Clínica Vista Hermosa debido al tipo de usuarios e información involucrada.
-
+Por esta razón, XSS Reflected obtiene severidad técnica media en CVSS, pero se mantiene como riesgo alto en la matriz debido a la sensibilidad de la información clínica y al posible compromiso de sesiones de usuarios.
 ---
 
 # 11. Impacto sobre Confidencialidad, Integridad y Disponibilidad

@@ -65,6 +65,12 @@ La demostración se limitó a la ejecución de una alerta JavaScript simple, sin
 
 **Figura 2.** Evidencia de explotación XSS Reflected en DVWA. Se observa la ejecución de código JavaScript en el navegador mediante una entrada no validada.
 
+## Captura de cálculo CVSS
+
+![CVSS XSS Reflected](/img_anajul/cvss_xss_anajul.png)
+
+**Figura 2.** Cálculo CVSS 3.1 para XSS Reflected. El resultado obtenido es **6.1 / Medio**, debido a que el ataque se ejecuta desde la red, posee baja complejidad y no requiere privilegios, pero sí requiere interacción del usuario. Su impacto principal se relaciona con la confidencialidad e integridad de la sesión o del contenido visualizado.
+
 ## 5.3 Resultado obtenido
 
 Al ingresar el payload en el campo vulnerable, el navegador interpretó el contenido como código JavaScript y ejecutó una ventana emergente.
